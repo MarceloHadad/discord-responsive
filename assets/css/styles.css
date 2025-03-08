@@ -1,0 +1,200 @@
+@font-face {
+	font-family: "GintoDiscordNord";
+	src: url("../fonts/Discord/GintoDiscordNord/ABCGintoDiscordNord-Bold.woff2"),
+		url("../fonts/Discord/GintoDiscordNord/ABCGintoDiscordNord-Bold.woff");
+}
+
+@font-face {
+	font-family: "GintoDiscordMedium";
+	src: url("../fonts/Discord/GintoDiscord/ABCGintoDiscord-Regular.woff2"),
+		url("../fonts/Discord/GintoDiscord/ABCGintoDiscord-Regular.woff");
+}
+
+* {
+	font-family: "GintoDiscordMedium", monospace;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "GintoDiscordNord", monospace;
+}
+
+.flex-element {
+	display: flex;
+	flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.gray-background {
+	background-color: #f6f6f6;
+}
+
+header {
+	color: white;
+	background-image: url("../images/background.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	gap: 1.5rem;
+	justify-content: space-between;
+	padding: 4rem 2rem;
+}
+
+header h1 {
+	text-align: start;
+}
+
+.button-section {
+	gap: 1rem;
+}
+
+button {
+	border-radius: 28px;
+	padding: 1rem;
+	border: none;
+	width: 23rem;
+	font-size: 1rem;
+}
+
+.download {
+	background-color: #fff;
+	color: #000;
+}
+
+.login {
+	background-color: #23272a;
+	color: #fff;
+}
+
+main section {
+	gap: 1.5rem;
+	padding: 2.5rem 0.8rem;
+}
+
+main img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	display: flex;
+	padding: 3rem;
+	background-color: #23272a;
+	justify-content: center;
+}
+
+footer img {
+	height: auto;
+	width: 13rem;
+}
+
+@media screen and (min-width: 390px) {
+	button {
+		width: 20rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		padding: 5rem 15rem 8rem;
+		gap: 2rem;
+		justify-content: center;
+	}
+
+	header h1 {
+		font-size: 3rem;
+		padding: 0 11rem;
+		text-align: center;
+	}
+
+	header p {
+		font-size: 1rem;
+		text-align: center;
+		padding: 0 3rem;
+	}
+
+	.button-section {
+		flex-direction: row;
+	}
+
+	button {
+		padding: 0.8rem 1.1rem;
+		width: auto;
+	}
+
+	main .flex-element {
+		flex-direction: row;
+		gap: 1rem;
+		padding: 0 9rem;
+	}
+
+	main figure {
+		flex: 1.5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.content {
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content p {
+		font-size: 1rem;
+	}
+	.image-right figure {
+		order: 2;
+	}
+
+	.image-down .content {
+		text-align: center;
+	}
+
+	.image-down h2 {
+		padding: 1rem 9rem;
+	}
+
+	.image-down p {
+		padding: 0 9.5rem;
+	}
+
+	.image-down img {
+		width: 65%;
+	}
+
+	footer {
+		padding: 2rem;
+	}
+
+	footer img {
+		width: 15rem;
+	}
+}
